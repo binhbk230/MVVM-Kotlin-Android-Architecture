@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/topStoriesFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="Top Stories"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/persionStoryFragment"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="2"
+        android:title="Personal New"
+        app:showAsAction="always"/>
+
+</menu>

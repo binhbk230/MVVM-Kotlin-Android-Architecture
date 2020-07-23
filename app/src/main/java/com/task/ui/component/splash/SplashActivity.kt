@@ -6,6 +6,7 @@ import android.os.Handler
 import com.task.databinding.SplashLayoutBinding
 import com.task.ui.ViewModelFactory
 import com.task.ui.base.BaseActivity
+import com.task.ui.component.login.LoginActivity
 import com.task.ui.component.news.NewsListActivity
 import com.task.utils.Constants
 import javax.inject.Inject
@@ -29,6 +30,10 @@ class SplashActivity : BaseActivity(){
         setContentView(view)
     }
 
+    override fun initControl() {
+
+    }
+
     override fun initializeViewModel() {
         splashViewModel = viewModelFactory.create(splashViewModel::class.java)
     }
@@ -44,7 +49,7 @@ class SplashActivity : BaseActivity(){
 
     private fun navigateToMainScreen() {
         Handler().postDelayed({
-            val nextScreenIntent = Intent(this, NewsListActivity::class.java)
+            val nextScreenIntent = Intent(this, LoginActivity::class.java)
             startActivity(nextScreenIntent)
             finish()
         }, Constants.SPLASH_DELAY.toLong())

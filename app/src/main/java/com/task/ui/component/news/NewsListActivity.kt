@@ -45,6 +45,10 @@ class NewsListActivity : BaseActivity() {
         setContentView(view)
     }
 
+    override fun initControl() {
+
+    }
+
     override fun initializeViewModel() {
         newsListViewModel = viewModelFactory.create(NewsListViewModel::class.java)
     }

@@ -19,6 +19,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.task.ui.ViewModelFactory
 import com.task.ui.component.details.DetailsViewModel
+import com.task.ui.component.login.LoginViewModel
 import com.task.ui.component.news.NewsListViewModel
 import com.task.ui.component.splash.SplashViewModel
 import dagger.Binds
@@ -49,4 +50,9 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(DetailsViewModel::class)
     internal abstract fun bindSplashViewModel(viewModel: DetailsViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(LoginViewModel::class)
+    internal abstract fun bindLoginViewModel(viewModel: LoginViewModel): ViewModel
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_graph.xml"
+    app:startDestination="@id/topStoriesFragment">
+
+    <fragment
+        android:id="@+id/topStoriesFragment"
+        android:name="com.task.ui.component.topstories.TopStoriesFragment"
+        android:label="TopStoriesFragment" >
+        <action
+            android:id="@+id/action_topStoriesFragment_to_persionStoryFragment"
+            app:destination="@id/persionStoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/persionStoryFragment"
+        android:name="com.task.ui.component.personstory.PersionStoryFragment"
+        android:label="PersionStoryFragment" />
+</navigation>

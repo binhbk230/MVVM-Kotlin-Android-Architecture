@@ -32,6 +32,10 @@ class DetailsActivity : BaseActivity() {
         setContentView(view)
     }
 
+    override fun initControl() {
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
